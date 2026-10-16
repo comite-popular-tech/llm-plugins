@@ -1,0 +1,11 @@
+{
+  "name": "pr",
+  "description": "Como abrir (pr-abridor) e como revisar (pr-revisor) um pull request nos repositórios do Comitê Popular Tech",
+  "author": {
+    "name": "Comitê Popular Tech"
+  },
+  "homepage": "https://github.com/comite-popular-tech/llm-plugins",
+  "repository": "https://github.com/comite-popular-tech/llm-plugins",
+  "license": "GPL-3.0-only",
+  "keywords": ["pull-request", "revisão", "github"]
+}

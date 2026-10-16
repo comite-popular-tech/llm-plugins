@@ -1,0 +1,14 @@
+{
+  "name": "comite-popular-tech",
+  "description": "Skills para LLMs que trabalham nos repositórios do Comitê Popular Tech",
+  "owner": {
+    "name": "Comitê Popular Tech"
+  },
+  "plugins": [
+    {
+      "name": "pr",
+      "source": "./plugins/pr",
+      "description": "Como abrir (pr-abridor) e como revisar (pr-revisor) um pull request"
+    }
+  ]
+}
