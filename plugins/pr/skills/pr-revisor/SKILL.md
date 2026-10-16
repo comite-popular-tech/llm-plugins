@@ -30,6 +30,10 @@ Referência de revisão da org, para pessoa ou LLM, em qualquer repositório. Va
 8. **Alegação técnica de quem contribui** ("o limite da API é X", "isso já está coberto"): confira na documentação ou no código e marque **confirmado**, **refutado** ou **não dá para saber** (e o acesso que faltou).
 9. **Falha de segurança grave**: não comente em público. Siga o `SECURITY.md` do repo; sem ele, mande mensagem direta a alguém do time @comite-popular-tech/infra-sec-nucleo (https://github.com/orgs/comite-popular-tech/teams/infra-sec-nucleo), nunca em issue, PR ou comentário.
 
+## Qualidade do código a fundo
+
+Toda revisão também passa pelo roteiro da [thermo-nuclear-code-quality-review](https://github.com/cursor/plugins/blob/6e3d2ea56d7d446b955eaae6ac4c8eef8bf504cf/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md), em inglês: estrutura, arquivo que passa de mil linhas, condicional espalhada, abstração que não se paga, e a reestruturação que apaga complexidade em vez de mudá-la de lugar. Leia pelo link e não copie o texto: o repositório dela não tem licença. Os achados entram como "pode melhorar", salvo regressão estrutural clara; PR mergeável continua sem bloqueio.
+
 ## Veredito
 
 - **Aprovar**: pode mergear, nada a mudar. Diga o que você conferiu; aprovação sem corpo não vale.
