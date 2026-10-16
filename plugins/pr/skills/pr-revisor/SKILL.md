@@ -32,7 +32,7 @@ Referência de revisão da org, para pessoa ou LLM, em qualquer repositório. Va
 
 ## Qualidade do código a fundo
 
-Toda revisão também passa pelo roteiro da [thermo-nuclear-code-quality-review](https://github.com/cursor/plugins/blob/6e3d2ea56d7d446b955eaae6ac4c8eef8bf504cf/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md), em inglês: estrutura, arquivo que passa de mil linhas, condicional espalhada, abstração que não se paga, e a reestruturação que apaga complexidade em vez de mudá-la de lugar. Leia pelo link e não copie o texto: o repositório dela não tem licença. Os achados entram como "pode melhorar", salvo regressão estrutural clara; PR mergeável continua sem bloqueio.
+Toda revisão também passa pelo roteiro da [thermo-nuclear-code-quality-review](https://github.com/cursor/plugins/blob/6e3d2ea56d7d446b955eaae6ac4c8eef8bf504cf/cursor-team-kit/skills/thermo-nuclear-code-quality-review/SKILL.md), em inglês: estrutura, arquivo que passa de mil linhas, condicional espalhada, abstração que não se paga, e a reestruturação que apaga complexidade em vez de mudá-la de lugar. Os achados entram como "pode melhorar", salvo regressão estrutural clara; PR mergeável continua sem bloqueio.
 
 ## Veredito
 
