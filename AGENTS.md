@@ -14,13 +14,13 @@ Tudo neste repositório (skills, docs, commits, PRs, issues) é em português do
 
 Marketplace de plugins do Claude Code com as skills do Comitê Popular Tech para quem trabalha nos repositórios da
 organização, pessoa ou LLM. As mesmas skills servem ao Codex e ao OpenCode, porque seguem o padrão Agent Skills
-(https://agentskills.io): uma pasta com um `SKILL.md`. Hoje há um plugin, `pr`, com `pr-abridor` e `pr-revisor`. Não há
-código nem build: o conteúdo é Markdown e JSON. Detalhes e instalação: [README.md](README.md).
+(https://agentskills.io): uma pasta com um `SKILL.md`. Não há código nem build: o conteúdo é Markdown e JSON.
+Detalhes e instalação: [README.md](README.md).
 
 ## Como validar
 
 ```bash
-claude plugin validate .   # roda antes de pedir revisão; deve passar
+claude plugin validate .   # rode antes de pedir revisão; passa com um aviso (veja abaixo)
 ```
 
 O aviso de `version` ausente é esperado: sem `version`, cada commit vira uma versão nova para quem instalou. Não
@@ -34,6 +34,7 @@ adicione `version`. Não há testes nem CI.
 | `plugins/<plugin>/.claude-plugin/plugin.json` | Manifesto do plugin |
 | `plugins/<plugin>/skills/<skill>/SKILL.md` | A skill; modelos longos ficam em arquivo ao lado |
 | `.github/CODEOWNERS` | Quem precisa aprovar |
+| `docs/` | Passo a passo para quem mantém o repositório |
 
 ## Regras que importam
 

@@ -5,7 +5,8 @@ Os critérios de texto de uma skill estão no [README](../README.md#como-contrib
 ## Skill nova num plugin existente
 
 1. Crie `plugins/<plugin>/skills/<skill>/SKILL.md`. O nome da pasta é o `name` do frontmatter.
-2. O frontmatter leva só `name` e `description`; a `description` diz quando usar e traz os gatilhos.
+2. O frontmatter leva `name` e `description` (obrigatórios); outro campo, só os do padrão Agent Skills listados no
+   `AGENTS.md`. A `description` diz quando usar e traz os gatilhos.
 3. Mantenha o `SKILL.md` com menos de 200 linhas. Modelo ou lista longa vai para um arquivo ao lado, como
    `modelo-de-corpo.md` na `pr-abridor`.
 4. Acrescente a skill à tabela de skills e à seção "Estrutura" do README.
