@@ -24,11 +24,17 @@ Referência de revisão da org, para pessoa ou LLM, em qualquer repositório. Va
    - perda de dados, privacidade e segurança, custo e exposição;
    - tamanho: se passa de uns 20 arquivos ou umas 1500 linhas e não está dividido nem justificado, diga; mas não reprove só por isso. Se você não conseguiu ler tudo, diga o que ficou de fora;
    - se a coisa é do app ou compartilhada, e se está no repo certo.
-5. **Testes.** Falham sem a correção? Chamam o código ou só leem texto do arquivo? Cobrem todos os caminhos (cópias do mesmo código, as duas vias de deploy)?
-6. **Infra e deploy.** O pré-requisito está em "Antes do merge" e foi feito? O plano foi lido? A main fica vermelha se o merge vier antes ou fora de ordem? Há "Se algo der errado"? Plano de deploy ou runbook: confira cada afirmação contra o código antes de aceitar.
-7. **Texto do PR.** Promete algo que só vale com outro PR? A documentação do repo ainda contradiz? Há segredo, e-mail pessoal, caminho de máquina, dado de terceiros ou URL de sessão privada? Há trailer de IA nos commits? O corpo tem barras invertidas sobrando?
-8. **Alegação técnica de quem contribui** ("o limite da API é X", "isso já está coberto"): confira na documentação ou no código e marque **confirmado**, **refutado** ou **não dá para saber** (e o acesso que faltou).
-9. **Falha de segurança grave**: não comente em público. Siga o `SECURITY.md` do repo; sem ele, mande mensagem direta a alguém do time @comite-popular-tech/infra-sec-nucleo (https://github.com/orgs/comite-popular-tech/teams/infra-sec-nucleo), nunca em issue, PR ou comentário.
+5. **Decisões de projeto.** Antes do veredito, procure o que já foi decidido sobre o que o PR toca: o registro de decisões do repo, se houver (por exemplo `docs/decisoes.md` ou `docs/adr/`, onde só ADR aceita vale como regra), as regras fixas do `CONTRIBUTING` e do `AGENTS.md`, as issues "decidir X" já fechadas e a documentação do repo. Há decisões que estão no código: o teste que fixa uma regra, a flag desligada por padrão, o valor-padrão da configuração. Diga na revisão em qual caso o PR está:
+   - **contraria** uma decisão: pede mudanças. O PR só entra se a decisão for revista antes, numa issue, e a documentação mudar no mesmo PR, ou se o PR for ajustado;
+   - **põe em risco** uma decisão: afrouxa ou remove o teste que a fixa, muda o padrão, abre um caminho que a contorna ou mexe no registro de decisões sem discussão ligada. Diga a chance e a consequência;
+   - **não toca** em nenhuma: diga onde conferiu, ou que o repo não tem registro.
+
+   Cite a decisão com link fixado no commit. Na dúvida, trate como "põe em risco" e pergunte a quem abriu o motivo, sem acusar.
+6. **Testes.** Falham sem a correção? Chamam o código ou só leem texto do arquivo? Cobrem todos os caminhos (cópias do mesmo código, as duas vias de deploy)?
+7. **Infra e deploy.** O pré-requisito está em "Antes do merge" e foi feito? O plano foi lido? A main fica vermelha se o merge vier antes ou fora de ordem? Há "Se algo der errado"? Plano de deploy ou runbook: confira cada afirmação contra o código antes de aceitar.
+8. **Texto do PR.** Promete algo que só vale com outro PR? A documentação do repo ainda contradiz? Há segredo, e-mail pessoal, caminho de máquina, dado de terceiros ou URL de sessão privada? Há trailer de IA nos commits? O corpo tem barras invertidas sobrando?
+9. **Alegação técnica de quem contribui** ("o limite da API é X", "isso já está coberto"): confira na documentação ou no código e marque **confirmado**, **refutado** ou **não dá para saber** (e o acesso que faltou).
+10. **Falha de segurança grave**: não comente em público. Siga o `SECURITY.md` do repo; sem ele, mande mensagem direta a alguém do time @comite-popular-tech/infra-sec-nucleo (https://github.com/orgs/comite-popular-tech/teams/infra-sec-nucleo), nunca em issue, PR ou comentário.
 
 ## Qualidade do código a fundo
 

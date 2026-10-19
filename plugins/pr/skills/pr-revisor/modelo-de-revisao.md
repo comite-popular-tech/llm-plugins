@@ -8,6 +8,7 @@
 
 **Para quem revisa:** <como o bloco do PR foi atendido: decidido, conferido ou ausente>
 **Como testar:** <passou | falhou no passo N: o que aconteceu | ausente>
+**Decisões:** <não toca em nenhuma (conferi <onde>) | põe em risco: <decisão, link> | contraria: <decisão, link>>
 **Conferi:** <commit `abc1234`; o que foi lido e rodado, com contagem de testes; falhas que também falham na main; o que não foi rodado ou lido>
 
 **Pode melhorar**
