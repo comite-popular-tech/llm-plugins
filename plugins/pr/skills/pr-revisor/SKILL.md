@@ -10,12 +10,12 @@ Referência de revisão da org, para pessoa ou LLM, em qualquer repositório. Va
 ## Regras de ouro
 
 1. **O repo alvo prevalece.** Leia o `README`, o `CONTRIBUTING`, o `AGENTS.md`/`CLAUDE.md`, o `SECURITY.md` (se houver) e o template de PR antes de julgar. Convenção que o repo exige (título, idioma) pode justificar pedir mudanças.
-2. **Quem é LLM não posta nada antes de a pessoa ler e aprovar o texto**: corpo da revisão, comentários inline, respostas e rascunhos de issue. Grave tudo em arquivos, mostre, espere o ok.
+2. **Quem é LLM não posta nada antes de a pessoa ler e aprovar o texto**: corpo da revisão, comentários inline, respostas e rascunhos de issue. Grave tudo em arquivos, mostre, espere o ok. A única exceção é o revisor automático que o repo liga num workflow: ele comenta sozinho em cada PR, porque o repo aprovou o formato ao ligá-lo, mas não dá veredito, não aprova, não pede mudanças e diz no comentário que a revisão humana continua valendo.
 3. **Texto curto, uma vez.** Sem recapitular o PR, sem ressalva genérica.
 
 ## Passos
 
-1. **Leia antes do diff.** Comece pelo bloco **"Para quem revisa"** no topo do corpo: é o que a pessoa que revisa precisa ler ou decidir, e a sua revisão responde a ele. Se o bloco não existe, aponte isso na revisão (como "pode melhorar") e deduza o que importa. Depois leia a issue ligada, os comentários e as threads existentes (não repita o que já foi dito) e as regras do repo. Anote o SHA do head e diga na revisão qual commit você conferiu.
+1. **Leia antes do diff.** Comece pelo bloco **"Para quem revisa"** no topo do corpo: é o que a pessoa que revisa precisa ler ou decidir, e a sua revisão responde a ele. Se o bloco não existe, aponte isso na revisão (como "pode melhorar") e deduza o que importa. Depois leia a issue ligada, os comentários e as threads existentes (não repita o que já foi dito) e as regras do repo. Se o revisor automático comentou, use o comentário como ponto de partida: confira cada apontamento antes de repeti-lo e diga na sua revisão o que ele errou. Anote o SHA do head e diga na revisão qual commit você conferiu.
 2. **Confira o contexto de deploy.** O PR é de fork ou de branch do repo? O CI e o plano rodaram de verdade, ou só "não falhou"? Qual caminho vale (aplica no merge, ou alguém publica à mão) e o que o merge liga ou desliga?
 3. **Baixe e rode.** Busque `pull/<n>/head` (por exemplo num worktree temporário) e siga primeiro os passos de **"Como testar"** do corpo; diga na revisão se passaram ou onde falharam. Se o bloco não existe, aponte como "pode melhorar". Depois rode a suíte do repo e reproduza qualquer bug suspeito antes de afirmar. Relate contagem e quais falhas também falham na main. Não apresente o resultado de testes do autor como se fosse seu.
 4. **Confira o diff**, sem ordem fixa:
